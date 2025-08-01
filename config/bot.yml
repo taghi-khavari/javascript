@@ -1,0 +1,16 @@
+env: development
+deribit:
+  key: DERIBIT_API_KEY
+  secret: DERIBIT_API_SECRET
+  testnet: true
+risk:
+  maxTradeRiskPct: 1
+  dailyStopLossPct: 4
+strategies:
+  momentum: { enabled: true }
+  ironCondor: { enabled: true }
+  shortStraddle: { enabled: false }
+redis:
+  url: redis://localhost:6379
+postgres:
+  url: postgresql://user:pass@localhost:5432/botdb
